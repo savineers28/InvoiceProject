@@ -32,7 +32,7 @@ public class OrderProducer {
         settings.put(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG, "C:\\codes\\programs\\Kafka\\ssl\\server.keystore.jks");
         settings.put(SslConfigs.SSL_KEYSTORE_PASSWORD_CONFIG, "test1234");
         settings.put(SslConfigs.SSL_KEY_PASSWORD_CONFIG, "test1234");*/
-        return new KafkaProducer<>(settings);
+        return new KafkaProducer<Long, String>(settings);
     }
 
     static void runProducer(final int sendMessageCount) throws Exception {
