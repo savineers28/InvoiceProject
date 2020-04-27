@@ -10,7 +10,7 @@ import java.util.Properties;
 
 public class OrderProducer {
     private final static String TOPIC = "OrderTopic";
-    private final static String BOOTSTRAP_SERVER = "localhost:9092";
+    private final static String BOOTSTRAP_SERVER = "kafka:9092";
 
     public static void main(String... args) throws Exception {
         if (args.length == 0) {
